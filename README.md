@@ -2,11 +2,11 @@
 
 ## Какой то код
 
-'''bash
+```bash
 mkdir my_project
 cd my_project
 git init
-'''
+```
 
 ### Ссылка на уроки
 
