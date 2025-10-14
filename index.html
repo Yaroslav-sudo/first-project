@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ежедневник</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Ежедневник 📝</h1>
+        </header>
+
+        <main class="app-main">
+            <section class="task-form-section">
+                <h2>Новая задача</h2>
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="task-title">Название задачи</label>
+                        <input type="text" id="task-title" placeholder="Например, выучить CSS Grid" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-description">Описание</label>
+                        <textarea id="task-description" rows="4" placeholder="Например, пройти интерактивный курс и сделать пару макетов"></textarea>
+                    </div>
+                    <button type="submit" class="btn-add">Добавить</button>
+                </form>
+            </section>
+
+            <section class="task-list-section">
+                <h2>Список задач</h2>
+                <div id="task-list" class="task-list">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
